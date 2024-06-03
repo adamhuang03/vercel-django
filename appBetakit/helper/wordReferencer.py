@@ -10,7 +10,7 @@ from nltk.tag import pos_tag
 # nltk.download('wordnet')
 # nltk.download('averaged_perceptron_tagger')
 # nltk.download('stopwords')
-nltk.data.path.append("/var/task/api/nltk_data/")
+nltk.data.path.append("/var/task/nltk_data/")
 
 def get_wordnet_pos(treebank_tag):
     """Convert treebank POS tags to WordNet POS tags."""
