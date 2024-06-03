@@ -20,5 +20,5 @@ from appOne.views import say_hi
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("hi/", say_hi)
+    path("api/hi/", say_hi)
 ]
