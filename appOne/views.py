@@ -7,7 +7,7 @@ from rest_framework.response import Response
 from rest_framework.authtoken.models import Token
 
 # Create your views here.
-@api_view(['POST'])
+@api_view(['GET'])
 @permission_classes([AllowAny])
 def say_hi(request):
     return Response({'Error': 'Cannot execute function.'}, status=status.HTTP_200_OK)
