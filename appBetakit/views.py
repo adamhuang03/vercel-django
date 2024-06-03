@@ -35,8 +35,11 @@ def start_betakitFunding_analysis(request):
             target_string=target_string
         )
         return Response(betakit.filtered_articles, status=status.HTTP_200_OK)
-    except:
-        return Response({'Error': 'Cannot execute function.'}, status=status.HTTP_200_OK)
+    except Exception as e:
+        return Response({
+            'Error': 'Cannot execute function.',
+            'Details': f'{e}',
+        }, status=status.HTTP_200_OK)
     
 @api_view(['POST'])
 @permission_classes([AllowAny])

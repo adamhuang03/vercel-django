@@ -6,10 +6,11 @@ from nltk.corpus import stopwords
 from nltk.tag import pos_tag
 
 # Download necessary NLTK data
-nltk.download('punkt')
-nltk.download('wordnet')
-nltk.download('averaged_perceptron_tagger')
-nltk.download('stopwords')
+# nltk.download('punkt')
+# nltk.download('wordnet')
+# nltk.download('averaged_perceptron_tagger')
+# nltk.download('stopwords')
+nltk.data.path.append("/var/task/api/nltk_data/")
 
 def get_wordnet_pos(treebank_tag):
     """Convert treebank POS tags to WordNet POS tags."""
