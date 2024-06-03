@@ -18,5 +18,10 @@
             "src": "/(.*)",
             "dest": "mainApp/wsgi.py"
         }
-    ]
+    ],
+    "functions": {
+        "mainApp/wsgi.py": {
+          "maxDuration": 60
+        }
+    }
 }
