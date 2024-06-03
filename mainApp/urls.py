@@ -17,8 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import appOne.views as a
+import appBetakit.views as betakitViews
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("api/hi/", a.say_hi)
+    path("api/hi/", a.say_hi),
+    path('api/analysis/betakit/funding',betakitViews.start_betakitFunding_analysis),
 ]

@@ -5,8 +5,8 @@ from dotenv import load_dotenv # poetry add python-dotenv
 from pprint import pprint
 headers = {'User-Agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.246"}
 
-dotenv_path = os.path.join(os.path.dirname(__file__), '..', '.env.local')
-load_dotenv(dotenv_path)
+# dotenv_path = os.path.join(os.path.dirname(__file__), '..', '.env.local')
+# load_dotenv(dotenv_path)
 
 instr_core = """
         You are an expert in finance and you understand the capital markets well. You have 10
